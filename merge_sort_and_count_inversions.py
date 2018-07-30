@@ -43,6 +43,7 @@ def merge_sort_and_count_inversions(ints_list):
     
 ints = open('IntegerArray.txt','r')
 ints_list = list(map(int,ints.read().split('\n')[:-1]))
+ints.close()
 
 print(merge_sort_and_count_inversions(ints_list))
 print(inversions)
